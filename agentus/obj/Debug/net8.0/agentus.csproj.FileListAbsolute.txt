@@ -129,3 +129,4 @@ C:\Users\PROFI\RiderProjects\agentus\agentus\obj\Debug\net8.0\agentus.pdb
 C:\Users\PROFI\RiderProjects\agentus\agentus\obj\Debug\net8.0\agentus.csproj.Up2Date
 C:\Users\PROFI\RiderProjects\agentus\agentus\obj\Debug\net8.0\agentus.genruntimeconfig.cache
 C:\Users\PROFI\RiderProjects\agentus\agentus\obj\Debug\net8.0\ref\agentus.dll
+C:\Users\PROFI\RiderProjects\agentus\agentus\obj\Debug\net8.0\agentus.sourcelink.json

@@ -20,5 +20,8 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/PROFI/RiderProjects/agentus/agentus/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/PROFI/RiderProjects/agentus/agentus/Views/AgentCard.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/PROFI/RiderProjects/agentus/agentus/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -3,7 +3,8 @@
         xmlns:vm="using:agentus.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" Width="1920" Height="1000"
         x:Class="agentus.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         x:CompileBindings="False"
@@ -37,11 +38,22 @@
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <ListBox x:Name="AgentListBox" Background="Transparent">
+            <ListBox x:Name="AgentListBox" Background="Transparent" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left">
-                            <Image Width="100" Height="100" Source="{Binding AgentPhoto}"/>
+                            <StackPanel Orientation="Horizontal" Width="1250" Height="150" DoubleTapped="InputElement_OnDoubleTapped" Tag="{Binding}">
+                                <Image Width="150" Height="150" Source="{Binding AgentPhoto}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0 "/>
+                                <StackPanel VerticalAlignment="Center" Margin="30 0 0 0  ">
+                                    <TextBlock Text="{Binding AgentType, StringFormat=' Тип агента: {0}'}" Margin="0 0 0  5"/>
+                                    <TextBlock Text="{Binding AgentName, StringFormat=' Имя: {0}'}" Margin="0 0 0  0"/>
+                                    <TextBlock Text="{Binding AgentCountSells, StringFormat=' {0} продаж за год'}" Margin="0 2 0 0"/>
+                                    <TextBlock Text="{Binding AgentPhone, StringFormat=' +{0}'}" Margin="0 2 0  0"/>
+                                    <TextBlock Text="{Binding AgentDiscount, StringFormat=' Приоритетность: {0}'}" VerticalAlignment="Center" Margin="0 2 0  0"/>
+                                </StackPanel>
+                                <TextBlock Text="{Binding AgentDiscount, StringFormat=' {0}%'}" VerticalAlignment="Top" FontSize="30" Margin="850 20 0 0 "/>
+                            </StackPanel>
+                            
                         </Border>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

@@ -11,7 +11,7 @@ public class Agents
     public int AgentDiscount { get; set; }
     public int AgentPhone { get; set; }
     public string AgentEmail { get; set; }
-    public Bitmap AgentPhoto { get; set; }
+    public Bitmap   { get; set; }
     public Bitmap CompanyLogo { get; set; }
     public string AgentAdress { get; set; }
     public int CompanyINN { get; set; }
@@ -30,6 +30,13 @@ public static class AgentList
             AgentEmail = "ivanbrooklyn@mail.com", AgentPhone = 89765587, AgentPhoto = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\empty.jpg"), CeoName = "VIKTOR",
             CompanyEmail = "ceobrooklyn@gmail.com", CompanyLogo = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\empty.jpg"), CompanyINN = 25523, CompanyKPP = 26356,
             AgentCountSells = 10
-        }
+        },
+        new Agents
+        {
+        AgentName = "IVAN", AgentType = "House", AgentAdress = "341 BROOKLYN STREET", AgentDiscount = 3,
+        AgentEmail = "ivanbrooklyn@mail.com", AgentPhone = 89765587, AgentPhoto = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\empty.jpg"), CeoName = "VIKTOR",
+        CompanyEmail = "ceobrooklyn@gmail.com", CompanyLogo = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\empty.jpg"), CompanyINN = 25523, CompanyKPP = 26356,
+        AgentCountSells = 10
+    }
     };
 }

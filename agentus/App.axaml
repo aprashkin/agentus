@@ -11,5 +11,10 @@
   
     <Application.Styles>
         <FluentTheme />
+        <Style Selector="Window">
+            <Setter Property="FontFamily" Value="avares://agentus/Assets/Fonts/CenturyGothic.ttf#Century Gothic"/>
+        </Style> 
     </Application.Styles>
+
+             
 </Application>
