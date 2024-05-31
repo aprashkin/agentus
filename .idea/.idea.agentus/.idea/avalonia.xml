@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="agentus/App.axaml" value="agentus/agentus.csproj" />
+        <entry key="agentus/Views/AgentCard.axaml" value="agentus/agentus.csproj" />
+        <entry key="agentus/Views/MainWindow.axaml" value="agentus/agentus.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
