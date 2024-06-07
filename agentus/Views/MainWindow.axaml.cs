@@ -16,8 +16,9 @@ public partial class MainWindow : Window
 
     private void InputElement_OnDoubleTapped(object? sender, TappedEventArgs e)
     {
+        Agents selectedAgents = (Agents)(sender as StackPanel)!.Tag!;
         Agents agent = (Agents)(sender as StackPanel)!.Tag!;
-        AgentCard agentCard = new AgentCard(agent);
+        AgentCard agentCard = new AgentCard(selectedAgents);
         agentCard.Show();
         Close();
     }

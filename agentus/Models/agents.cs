@@ -33,7 +33,7 @@ public static class AgentList
         },
         new Agents
         {
-        AgentName = "IVAN", AgentType = "House", AgentAdress = "341 BROOKLYN STREET", AgentDiscount = 3,
+        AgentName = "ANDREW", AgentType = "Cars", AgentAdress = "341 KXLXSH BERN", AgentDiscount = 3,
         AgentEmail = "ivanbrooklyn@mail.com", AgentPhone = 89765587, AgentImagePath = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\AgentsIcon\\agent_43.png"), CeoName = "VIKTOR",
         CompanyEmail = "ceobrooklyn@gmail.com", CompanyLogo = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\agentus\\agentus\\Assets\\AgentsIcon\\agent_53.png"), CompanyINN = 25523, CompanyKPP = 26356,
         AgentCountSells = 10

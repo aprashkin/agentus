@@ -7,9 +7,27 @@
         x:Class="agentus.Views.AgentCard"
         x:CompileBindings="False"
         Title="AgentCard">
-    <Grid ColumnDefinitions=".1* .1* .1*" RowDefinitions=".3* .1* .1*" ShowGridLines="True">
-       <StackPanel Name="SP" DataContext="{Binding Agent}">
-           <Image Source="{Binding AgentPhoto}"/> 
-       </StackPanel>
+    <Grid ColumnDefinitions=".1* .1* .1*" RowDefinitions=".2* .1* .1*" ShowGridLines="True">
+       <Border BorderBrush="Black" BorderThickness="2" CornerRadius="30">
+           <StackPanel Name="SP">
+               <Image Source="{Binding selectedAgent.ImagePath}" HorizontalAlignment="Center" Height="500" Width="500" VerticalAlignment="Center"/> 
+           </StackPanel>
+       </Border>
+        
+        <StackPanel HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0" Margin="0 100 0 0">
+            <TextBlock Margin="5" Name="NameTextBlock"/>
+            <TextBlock Margin="5" Name="TypeTextBlock"/>
+            <TextBlock Margin="5" Name="CountSellsTextBlock"/>
+            <TextBlock Margin="5" Name="DiscountTextBlock"/>
+            <TextBlock Margin="5" Name="PhoneTextBlock"/>
+            <TextBlock Margin="5" Name="EmailTextBlock"/>
+            <TextBlock Margin="5" Name="AdressTextBlock"/>
+            <TextBlock Margin="5" Name="InnTextBlock"/>
+            <TextBlock Margin="5" Name="KppTextBlock"/>
+            <TextBlock Margin="5" Name="CeoNameTextBlock"/>
+            <TextBlock Margin="5" Name="CompanyEmailTextBlock"/>
+        </StackPanel>
+            <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Удалить агента?" Background="Transparent" BorderThickness="2 " CornerRadius="7" Foreground="Red" Margin="30" FontSize="20" BorderBrush="#B175EE"/>
+            <Button Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Content="Вернуться на главную" VerticalAlignment="Top" Margin="30" FontSize="20" BorderBrush="#B175EE" BorderThickness="2"/>
     </Grid>
 </Window>
